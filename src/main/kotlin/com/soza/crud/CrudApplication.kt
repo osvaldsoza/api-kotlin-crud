@@ -1,7 +1,7 @@
 package com.soza.crud
 
-import com.soza.crud.model.Customer
-import com.soza.crud.repository.CustomerRepository
+import com.soza.crud.model.Anime
+import com.soza.crud.repository.AnimeRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -11,14 +11,12 @@ import org.springframework.context.annotation.Bean
 class CrudApplication{
 
 
-//    @Bean
-//    fun init(repository: CustomerRepository) = CommandLineRunner{
-//        repository.save(Customer("Jack", "Bauer"))
-//        repository.save(Customer("Chloe", "O'Brian"))
-//        repository.save(Customer("Kim", "Bauer"))
-//        repository.save(Customer("David", "Palmer"))
-//        repository.save(Customer("Michelle", "Dessler"))
-//    }
+    @Bean
+    fun init(repository: AnimeRepository) = CommandLineRunner{
+        repository.save(Anime(1,"Dragon Ball Z"))
+        repository.save(Anime(2,"Naruto"))
+        repository.save(Anime(3,"Death Note"))
+    }
 }
 
 fun main(args: Array<String>) {
