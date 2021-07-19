@@ -1,10 +1,10 @@
 version: '3.7'
 services:
-  postgres-animes:
-    container_name: postgres-animes
+  postgres-squader:
+    container_name: postgres-squader
     image: postgres:12.2
     environment:
-      POSTGRES_DB: animes
+      POSTGRES_DB: squaders
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:

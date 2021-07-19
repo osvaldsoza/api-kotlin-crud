@@ -8,6 +8,6 @@ spring:
     hibernate:
       ddl-auto: create
   datasource:
-    url: jdbc:postgresql://localhost:5432/animes?createDatabaseIfNotExist=true&useSSL=false
+    url: jdbc:postgresql://localhost:5432/squaders?createDatabaseIfNotExist=true&useSSL=false
     username: postgres
     password: postgres

@@ -1,7 +1,7 @@
 package com.soza.crud
 
-import com.soza.crud.model.Anime
-import com.soza.crud.repository.AnimeRepository
+import com.soza.crud.model.Squader
+import com.soza.crud.repository.SquaderRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -12,10 +12,10 @@ class CrudApplication{
 
 
     @Bean
-    fun init(repository: AnimeRepository) = CommandLineRunner{
-        repository.save(Anime(1,"Dragon Ball Z"))
-        repository.save(Anime(2,"Naruto"))
-        repository.save(Anime(3,"Death Note"))
+    fun init(repository: SquaderRepository) = CommandLineRunner{
+        repository.save(Squader(1,"Delson"))
+        repository.save(Squader(2,"Tacila"))
+        repository.save(Squader(3,"Osvaldo"))
     }
 }
 

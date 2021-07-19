@@ -1,8 +1,8 @@
 package com.soza.crud.repository
 
-import com.soza.crud.model.Anime
+import com.soza.crud.model.Squader
 import org.springframework.data.repository.CrudRepository
 
-interface AnimeRepository:CrudRepository<Anime,Long> {
+interface SquaderRepository:CrudRepository<Squader,Long> {
 
 }
